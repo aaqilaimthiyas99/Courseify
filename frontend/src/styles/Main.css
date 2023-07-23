@@ -1,0 +1,50 @@
+.mainHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 100px;
+}
+
+
+
+.signinBtn{
+    margin-right: 30px;
+    color: #AC7118;
+    background-color:#ffefd6;
+    width: 85px;
+    height: 43px;
+    border-radius: 10px;
+    box-shadow: 4px 2px 16px -2px rgba(0,0,0,0.48);
+    -webkit-box-shadow: 4px 2px 16px -2px rgba(0,0,0,0.48);
+    -moz-box-shadow: 4px 2px 16px -2px rgba(0,0,0,0.48);
+border: none;
+font-weight: bolder;
+font-size: medium;
+cursor: pointer;
+}
+
+.registerBtn{
+    
+    color: white;
+    background-color:#AC7118;
+    width: 90px;
+    height: 43px;
+    border-radius: 10px;
+    box-shadow: 4px 2px 16px -2px rgba(0,0,0,0.48);
+-webkit-box-shadow: 4px 2px 16px -2px rgba(0,0,0,0.48);
+-moz-box-shadow: 4px 2px 16px -2px rgba(0,0,0,0.48);
+border: none;
+font-weight: bolder;
+font-size: medium;
+cursor: pointer;
+}
+
+.logo{
+    width: 130px;
+    height: 130px;
+}
+.mainImg{
+    width: 32px;
+    height: 32px;
+    border: 50%;
+}
