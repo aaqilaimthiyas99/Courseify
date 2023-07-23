@@ -1,2 +1,0 @@
-# Courseify
-Mini_Project
