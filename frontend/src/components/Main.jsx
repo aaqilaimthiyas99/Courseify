@@ -1,5 +1,6 @@
 import React from 'react'
 import "../styles/Main.css"
+import Logo from '../core/logo/logo'
 
 export default function Main() {
   return (
@@ -7,7 +8,7 @@ export default function Main() {
         
     <div className="mainHeader">
         <div className="mainHeaderLeft">
-            <img src="/assets/logo.png" alt="" className="logo" />
+            <Logo/>
         </div>
         <div className="mainHeaderRight">
             <button className="signinBtn">Sign In</button>

@@ -1,10 +1,12 @@
-import Home from './pages/Home';
+import HomeSignin from './components/HomeSignin';
+// import Home from './components/Main';
 import './App.css';
 
 function App() {
   return (
     <div>
-      <Home/>
+      {/* <Home/> */}
+      <HomeSignin/>
     </div>
   );
 }

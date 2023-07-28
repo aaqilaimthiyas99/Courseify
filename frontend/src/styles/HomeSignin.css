@@ -1,25 +1,24 @@
-.mainHeader{
+.homesigninheader{
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 20px 100px;
 }
 
-.mainHeaderRight{
-    padding-left: 50%;
+.signinheaderright{
+    display: flex;
+    gap: 30px;
 }
 
-.signinBtn{
-    margin-right: 30px;
-    background-color:#eddcc5;
-    width: 97px;
-    height: 53px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 13px -10px rgba(0,0,0,0.48);
-    -webkit-box-shadow: 5px 5px 13px -10px rgba(0,0,0,0.48);
-    -moz-box-shadow: 5px 5px 13px -10px rgba(0,0,0,0.48);
-    border: none;
-    color: #AC7118;
+.signinheadercenter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 72px;
+}
+
+.home{
+    color: #0E0828;
     font-family: Poppins;
     font-size: 20px;
     font-style: normal;
@@ -28,21 +27,13 @@
     cursor: pointer;
 }
 
-.signinBtn:hover{
-    background-color:#E4D1B6;
+.home:hover{
+    font-size: 22px;
+    text-decoration: underline;
 }
 
-.registerBtn{
-    color: white;
-    background-color:#AC7118;
-    width: 127px;
-    height: 53px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 13px -10px rgba(0,0,0,0.48);
-    -webkit-box-shadow: 5px 5px 13px -10px rgba(0,0,0,0.48);
-    -moz-box-shadow: 5px 5px 13px -10px rgba(0,0,0,0.48);
-    border: none;
-    color: #FFF;
+.courses{
+    color: #0E0828;
     font-family: Poppins;
     font-size: 20px;
     font-style: normal;
@@ -51,22 +42,68 @@
     cursor: pointer;
 }
 
-.registerBtn:hover{
-    background-color: #856029;
+.courses:hover{
+    font-size: 22px;
+    text-decoration: underline;
 }
 
-.mainCenter{
+.tutors{
+    color: #0E0828;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.tutors:hover{
+    font-size: 22px;
+    text-decoration: underline;
+}
+
+.roadmaps{
+    color: #0E0828;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.roadmaps:hover{
+    font-size: 22px;
+    text-decoration: underline;
+}
+
+.contact{
+    color: #0E0828;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.contact:hover{
+    font-size: 22px;
+    text-decoration: underline;
+}
+
+.homesignincenter{
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin: 20px 100px;
 }
 
-.mainCenterLeft{
+.signincenterleft{
     margin-top: -30px;
 }
 
-.title{
+.signintitle{
     width: 673px;
     color: #AC7118;
     font-family: Amaranth;
@@ -76,7 +113,7 @@
     line-height: normal;
 }
 
-.title-color-change{
+.title-change-color{
     width: 673px;
     color: black;
     font-family: Amaranth;
@@ -87,7 +124,7 @@
     padding-top: 80px;
 }
 
-.mainText{
+.signinmainText{
     width: 608px;
     height: 65px;
     flex-shrink: 0;
@@ -100,7 +137,31 @@
     padding-top: 25px;
 }
 
-.getFreeTrialBtn{
+.signingetStratedBtn{
+    margin-right: 30px;
+    background-color:#AC7118;
+    width: 163px;
+    height: 53px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 13px -10px rgba(0,0,0,0.48);
+    -webkit-box-shadow: 5px 5px 13px -10px rgba(0,0,0,0.48);
+    -moz-box-shadow: 5px 5px 13px -10px rgba(0,0,0,0.48);
+    border: none;
+    color: white;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.signingetStratedBtn:hover{
+    background-color:#856029;
+}
+
+
+.signingetFreeTrialBtn{
     margin-right: 30px;
     background-color:#eddcc5;
     width: 163px;
@@ -119,15 +180,15 @@
     cursor: pointer;
 }
 
-.getFreeTrialBtn:hover{
+.signingetFreeTrialBtn:hover{
     background-color:#E4D1B6;
 }
 
-.mainCenterRight{
+.signincenterright{
     margin-right: 100px;
 }
 
-.mainImg{
+.signinmainImg{
     width: 450px;
     height: 482px;
     padding-left: 30px;
@@ -138,12 +199,12 @@
     -moz-box-shadow: 5px 5px 13px -10px rgba(0,0,0,0.48);
 }
 
-.mainFooter{
+.homesigninfooter{
     width: 1120px;
     height: 300px;
 }
 
-.container{
+.signincontainer{
     display: flex;
     align-items: center;
     background-color: #eddcc5;
@@ -156,7 +217,7 @@
     flex-shrink: 0;
 }
 
-.group1{
+.signingroup1{
     width: 210px;
     height: 70px;
     flex-shrink: 0;
@@ -165,7 +226,7 @@
     padding-bottom: 54px;
 }
 
-.box1{
+.signinbox1{
     width: 70px;
     height: 70px;
     border-radius: 10px;
@@ -173,7 +234,7 @@
     background-color: white;
 }
 
-.group1img{
+.signingroup1img{
     width: 29px;
     height: 28px;
     padding-top: 21px;
@@ -184,7 +245,7 @@
     fill: black;
 }
 
-.num1{
+.signinnum1{
     color: #AC7118;
     font-family: Poppins;
     font-size: 24px;
@@ -196,7 +257,7 @@
     
 }
 
-.def1{
+.signindef1{
     color: #000;
     font-family: Poppins;
     font-size: 15px;
@@ -209,7 +270,7 @@
     white-space: nowrap;
 }
 
-.group2{
+.signingroup2{
     width: 201px;
     height: 72px;
     flex-shrink: 0;
@@ -218,7 +279,7 @@
     padding-bottom: 54px;
 }
 
-.box2{
+.signinbox2{
     width: 70px;
     height: 70px;
     border-radius: 10px;
@@ -226,7 +287,7 @@
     background-color: white;
 }
 
-.group2img{
+.signingroup2img{
     width: 29px;
     height: 26px;
     padding-top: 24px;
@@ -237,7 +298,7 @@
     fill: black;
 }
 
-.num2{
+.signinnum2{
     color: #AC7118;
     font-family: Poppins;
     font-size: 24px;
@@ -248,7 +309,7 @@
     margin-top: -75px;
 }
 
-.def2{
+.signindef2{
     color: #000;
     font-family: Poppins;
     font-size: 15px;
@@ -261,7 +322,7 @@
     white-space: nowrap;
 }
 
-.group3{
+.signingroup3{
     width: 201px;
     height: 72px;
     flex-shrink: 0;
@@ -270,7 +331,7 @@
     padding-bottom: 54px;
 }
 
-.box3{
+.signinbox3{
     width: 70px;
     height: 70px;
     border-radius: 10px;
@@ -278,7 +339,7 @@
     background-color: white;
 }
 
-.group3img{
+.signingroup3img{
     width: 28px;
     height: 22px;
     padding-top: 24px;
@@ -289,7 +350,7 @@
     fill: black;
 }
 
-.num3{
+.signinnum3{
     color: #AC7118;
     font-family: Poppins;
     font-size: 24px;
@@ -300,7 +361,7 @@
     margin-top: -75px;
 }
 
-.def3{
+.signindef3{
     color: #000;
     font-family: Poppins;
     font-size: 15px;

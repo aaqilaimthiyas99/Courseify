@@ -1,0 +1,13 @@
+.notificationIcon{
+    width: 22px;
+    height: 25px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.notificationIcon:hover{
+    width: 23px;
+    height: 26px;
+    flex-shrink: 0;
+    transform:scale(1.1)
+}
