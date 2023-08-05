@@ -1,0 +1,36 @@
+.searchBar{
+    background-color: rgba(172, 113, 24, 0.16);
+    width: 347px;
+    height: 55px;
+    flex-shrink: 0;
+    margin-left: 718px;
+    border: none;
+    border-radius: 40px;
+    padding-left: 10px;
+    box-shadow: opx opx 0px 8x rgba(172, 113, 24, 0.16) ;
+    align-items: center;
+    display: flex;
+} 
+
+.SearchBox-main{
+    color: #000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: transparent;
+    border: none;
+    padding-left: 15px;
+    height: 100%;
+    width: 100%;
+}
+
+.SearchBox-main:focus{
+    outline: none;
+} 
+
+#serachIcon{
+    color: #856029;
+    padding-left: 10px;
+}

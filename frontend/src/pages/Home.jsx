@@ -1,12 +1,14 @@
 import React from 'react'
 import Main from '../components/Main'
-import Home_signin from '../components/Home_signin'
+import HomeSignin from '../components/HomeSignin'
+import HomeCourse from '../components/HomeCourse'
 
 export default function Home() {
   return (
     <div>
         <Main/>
-        <Home_signin/>
+        <HomeSignin/>
+        <HomeCourse/>
     </div>
   )
 }
