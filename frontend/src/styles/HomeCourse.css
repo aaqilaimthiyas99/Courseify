@@ -10,14 +10,18 @@
     gap: 30px;
 }
 
+.hcheadercenter{
+    padding-right: 20px;
+}
+
 .longsearchbar{
     width: 1103px;
     height: 61px;
     flex-shrink: 0;
     border-radius: 40px;
-    background: rgba(172, 113, 24, 0.16);
+    background: rgba(172, 113, 24, 0.12);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     margin-left: 205px;
-    box-shadow: opx opx 0px 8x rgba(172, 113, 24, 0.16) ;
     align-items: center;
     display: flex;
 }
