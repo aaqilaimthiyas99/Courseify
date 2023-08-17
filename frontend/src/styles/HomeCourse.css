@@ -12,6 +12,37 @@
 
 .hcheadercenter{
     padding-right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+
+}
+
+.hctitle{
+    width: 681px;
+    height: 51px;
+    flex-shrink: 0;
+    padding-left: 30px;
+}
+
+.text1{
+    color: #0E0828;
+    font-family: Amaranth;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.lngtxt{
+    color: #000;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 100px;
+    padding-bottom: 30px;
 }
 
 .longsearchbar{
@@ -54,16 +85,15 @@
 
 .hclistofcourses{
     display: flex;
-    align-items: center;
     justify-content: space-between;
     width: 1287px;
     height: 500px;
     flex-shrink: 0;
-    margin-left: 113px;
-    margin-right: 113px;
-    margin-bottom: 100px;
-    padding-top: 65px;
-}
+    padding-left: 113px;
+    padding-right: 113px;
+    padding-top: 70px;
+    margin-bottom: 150px;
+} 
 
 .hcline1{
     width: 399px;

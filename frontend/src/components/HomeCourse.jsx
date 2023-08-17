@@ -7,7 +7,7 @@ import SearchBar from '../core/searchBar/searchBar'
 import {FaSearch} from "react-icons/fa"
 import CourseComponent from '../core/courseBox/courseBox'
 
-export default function HomeCourse() {
+export const HomeCourse = ()=> {
   return (
     <>
     <div className="homecourseHeader">
@@ -17,8 +17,8 @@ export default function HomeCourse() {
             </div>
         </div>
         <div className="hcheadercenter">
-            <div className="hctitile">
-
+            <div className="hctitle">
+                <h1 className="text1"> Explore Courses by Category </h1>
             </div>
             <div className="hcsearchbar">
                 <SearchBar/>
@@ -32,6 +32,9 @@ export default function HomeCourse() {
                 <Profile/>
             </div>
         </div>
+    </div>
+    <div className="longtext">
+        <p className="lngtxt"> Discover a world of top-class, free courses effortlessly by exploring our user-friendly categories. Your learning journey made easier! </p>
     </div>
     <div className="longsearchbar">
         <FaSearch id='serachIcon2'/>

@@ -2,7 +2,7 @@ import React from 'react'
 import "../styles/Main.css"
 import Logo from '../core/logo/logo'
 
-export default function Main() {
+export const Main = () => {
   return (
     <>
         

@@ -4,7 +4,7 @@ import Notification from '../core/notification/notification';
 import Profile from '../core/profile/profile';
 import Logo from '../core/logo/logo';
 
-export default function HomeSignin() {
+export const HomeSignin = () => {
   return (
     <>
     <div className="homesigninheader">
