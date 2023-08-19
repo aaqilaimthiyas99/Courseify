@@ -3,6 +3,7 @@ import '../styles/PopularCourses.css'
 import Logo from '../core/logo/logo'
 import Notification from '../core/notification/notification'
 import Profile from '../core/profile/profile'
+import CourseCard from '../core/pcCourseBox/pcCourseBox'
 
 export const PopularCourses = () => {
   return (
@@ -33,33 +34,61 @@ export const PopularCourses = () => {
         </div>
         <div className="coursecontainer">
             <div className="pcline1">
-                <div className="pccrse1">
-                    <div className="pc1outerbox">
-                        <div className="pcimg">
-                            <img src = "assets/pcimg1.png" alt = "" className='crse1img'/>
-                        </div>
-                            <h1 className="crse1desc"> Learn Python Programming in 7 Days </h1>
-                        <div className="crse1descbox">
-                            <div className="crsehighlight"> 
-                                <p className="crse1highlight"> Programming </p>
-                            </div>
-                            <div className="pc1views">
-                                <img src='assets/pcicon.png' alt = ""  className='pcicon'/>
-                                <p className="crse1txt"> 400k+ </p>
-                            </div>
-                            <div className="pc1rating">
-                                <img src="assets/pcvector.png" alt="" className="pc1star" />
-                                <p className="pc1ratingcount"> 4.8 </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <CourseCard
+                    imageSrc="assets/pcimg1.png"
+                    title="Learn Python Programming in 7 Days"
+                    category="Programming"
+                    viewsCount="400k+"
+                    rating="4.8"
+                    highlightLength={130}
+                />
+                <CourseCard
+                    imageSrc="assets/pcimg4.png"
+                    title="Learn CMS Development"
+                    category="Web Design"
+                    viewsCount="300k++"
+                    rating="4.8"
+                    isFirstCourse
+                    highlightLength={110}
+                />
             </div>
             <div className="pcline2">
-
+                <CourseCard
+                    imageSrc="assets/pcimg2.png"
+                    title="Learn App Development in 30 Days"
+                    category="Web Design"
+                    viewsCount="500k+"
+                    rating="4.9"
+                    highlightLength={110}
+                />
+                <CourseCard
+                    imageSrc="assets/pcimg5.png"
+                    title="Complete Web Design Course"
+                    category="Web Design"
+                    viewsCount="500k+"
+                    rating="4.8"
+                    isFirstCourse
+                    highlightLength={110}
+                />
             </div>
             <div className="pcline3">
-
+                <CourseCard
+                    imageSrc="assets/pcimg3.png"
+                    title="Advance Motion Graphics"
+                    category="Graphic Design"
+                    viewsCount="300k+"
+                    rating="3.8"
+                    highlightLength={140}
+                />
+                <CourseCard
+                    imageSrc="assets/pcimg6.png"
+                    title="Advance Photography Course"
+                    category="Media"
+                    viewsCount="350k+"
+                    rating="4.5"
+                    isFirstCourse
+                    highlightLength={65}
+                />
             </div>
         </div>
     </>

@@ -1,3 +1,8 @@
+BODY{
+    width: 1512px;
+    height: 982px;
+}
+
 .homecourseHeader{
     display: flex;
     align-items: center;

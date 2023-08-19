@@ -2,7 +2,8 @@
 // import { Home } from './components/Main';
 // import { HomeCourse } from './components/HomeCourse';
 import './App.css';
-import { PopularCourses } from './components/PopularCourses';
+// import { PopularCourses } from './components/PopularCourses';
+import { RoadMaps } from './components/RoadMaps';
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       {/* <Home/> */}
       {/* <HomeSignin/>  */}
       {/* <HomeCourse/>   */}
-      <PopularCourses/>  
+      {/* <PopularCourses/>   */}
+      <RoadMaps/>
     </div>
   );
 }
