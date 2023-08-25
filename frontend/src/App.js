@@ -1,6 +1,7 @@
-// import { HomeSignin } from './components/HomeSignin';
-// import { Home } from './components/Main';
-// import { HomeCourse } from './components/HomeCourse';
+import { HomeSignin } from './components/HomeSignin';
+import { Route, Routes } from 'react-router-dom';
+import { Main } from './components/Main';
+import { HomeCourse } from './components/HomeCourse';
 import './App.css';
 // import { PopularCourses } from './components/PopularCourses';
 import { RoadMaps } from './components/RoadMaps';
@@ -8,11 +9,15 @@ import { RoadMaps } from './components/RoadMaps';
 function App() {
   return (
     <div>
-      {/* <Home/> */}
-      {/* <HomeSignin/>  */}
-      {/* <HomeCourse/>   */}
-      {/* <PopularCourses/>   */}
-      <RoadMaps/>
+      <Routes>
+        <Route path="/" element = {<Main/>}/>
+        <Route path = "/home" element = {<HomeSignin/>}/>
+        <Route path = "/courses" element = {<HomeCourse/>}/>
+        {/* <Route path = "/tutors" element = {<HomeSignin/>}/> */}
+        <Route path = "/roadmaps" element = {<RoadMaps/>}/>
+        {/* <Route path = "/contact" element = {<Contact/>}/> */}
+
+      </Routes>
     </div>
   );
 }

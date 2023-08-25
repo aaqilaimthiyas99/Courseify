@@ -5,7 +5,7 @@ import Logo from '../core/logo/logo'
 export const Main = () => {
   return (
     <>
-        
+    
     <div className="mainHeader">
         <div className="mainHeaderLeft">
             <Logo/>
@@ -50,6 +50,7 @@ export const Main = () => {
             </div>
         </div>
     </div>
+    
     </>
   )
 }

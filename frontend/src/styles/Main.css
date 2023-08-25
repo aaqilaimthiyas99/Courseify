@@ -12,6 +12,8 @@ body{
 
 .mainHeaderRight{
     padding-left: 50%;
+    display: flex;
+    padding-left: 30px;
 }
 
 .signinBtn{

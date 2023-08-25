@@ -3,6 +3,7 @@ import '../styles/HomeSignin.css';
 import Notification from '../core/notification/notification';
 import Profile from '../core/profile/profile';
 import Logo from '../core/logo/logo';
+import { Navbar } from '../core/navbar/navbar';
 
 export const HomeSignin = () => {
   return (
@@ -14,11 +15,8 @@ export const HomeSignin = () => {
             </div>
         </div> 
         <div className="signinheadercenter">
-            <h1 className="home"> Home </h1>
-            <h1 className="courses"> Courses </h1>
-            <h1 className="tutors"> Tutors </h1>
-            <h1 className="roadmaps"> Roadmaps </h1>
-            <h1 className="contact"> Contact </h1>
+            
+            <Navbar/>
         </div>
         <div className="signinheaderright">
             <div className="notificationside">
