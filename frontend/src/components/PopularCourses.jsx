@@ -4,6 +4,7 @@ import Logo from '../core/logo/logo'
 import Notification from '../core/notification/notification'
 import Profile from '../core/profile/profile'
 import CourseCard from '../core/pcCourseBox/pcCourseBox'
+import { Link } from 'react-router-dom'
 
 export const PopularCourses = () => {
   return (
@@ -18,7 +19,9 @@ export const PopularCourses = () => {
                 <div className="pctitle">
                     <h1 className="pctext"> Popular Courses for You </h1>
                 </div>
-                <button className="allcategorybtn"> All Category </button>
+                <Link to = "/courses_by_category">
+                    <button className="allcategorybtn"> All Category </button>
+                </Link>
             </div>
             <div className="pcheaderright">
                 <div className="pcnotification">
