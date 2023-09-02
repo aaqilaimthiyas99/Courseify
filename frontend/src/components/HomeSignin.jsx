@@ -15,7 +15,6 @@ export const HomeSignin = () => {
             </div>
         </div> 
         <div className="signinheadercenter">
-            
             <Navbar/>
         </div>
         <div className="signinheaderright">

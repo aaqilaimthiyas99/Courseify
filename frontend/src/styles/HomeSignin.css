@@ -92,13 +92,11 @@ body{
 
 .signingetFreeTrialBtn{
     margin-right: 30px;
-    background-color:#eddcc5;
+    background: rgba(172, 113, 24, 0.12);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     width: 163px;
     height: 53px;
     border-radius: 10px;
-    box-shadow: 5px 5px 13px -10px rgba(0,0,0,0.48);
-    -webkit-box-shadow: 5px 5px 13px -10px rgba(0,0,0,0.48);
-    -moz-box-shadow: 5px 5px 13px -10px rgba(0,0,0,0.48);
     border: none;
     color: #AC7118;
     font-family: Poppins;
@@ -136,7 +134,8 @@ body{
 .signincontainer{
     display: flex;
     align-items: center;
-    background-color: #eddcc5;
+    background: rgba(172, 113, 24, 0.12);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     margin-left: 250px;
     margin-right: 295px;

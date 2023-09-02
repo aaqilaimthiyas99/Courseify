@@ -78,10 +78,10 @@ export const PopularCourses = () => {
                 <CourseCard
                     imageSrc="assets/pcimg3.png"
                     title="Advance Motion Graphics"
-                    category="Graphic Design"
+                    category="Web Design"
                     viewsCount="300k+"
                     rating="3.8"
-                    highlightLength={140}
+                    highlightLength={110}
                 />
                 <CourseCard
                     imageSrc="assets/pcimg6.png"

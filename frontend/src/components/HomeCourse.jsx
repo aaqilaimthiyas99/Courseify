@@ -44,7 +44,7 @@ export const HomeCourse = ()=> {
         <div className="hcline1">
             <CourseComponent
                 imageSrc="/assets/Vector1.jpg"
-                courseTitle="Design & Development"
+                courseTitle="Web Design"
                 courseCount={250}
                 isFirstCourse
             />
@@ -62,7 +62,7 @@ export const HomeCourse = ()=> {
         <div className="hcline2">
             <CourseComponent
                 imageSrc="/assets/Vector4.jpg"
-                courseTitle="Technology & Programming"
+                courseTitle="Programming"
                 courseCount={400}
                 isFirstCourse
             />
@@ -80,7 +80,7 @@ export const HomeCourse = ()=> {
         <div className="hcline3">
             <CourseComponent
                 imageSrc="/assets/Vector7.jpg"
-                courseTitle="Digital Marketing"
+                courseTitle="Media"
                 courseCount={150}
                 isFirstCourse
             />
