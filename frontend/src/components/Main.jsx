@@ -1,6 +1,8 @@
 import React from 'react'
 import "../styles/Main.css"
 import Logo from '../core/logo/logo'
+import { Link } from 'react-router-dom'
+
 
 export const Main = () => {
   return (
@@ -11,8 +13,12 @@ export const Main = () => {
             <Logo/>
         </div>
         <div className="mainHeaderRight">
-            <button className="signinBtn">Sign In</button>
-            <button className="registerBtn">Register</button>
+            <Link to = "/sign_in">
+                <button className="signinBtn">Sign In</button>
+            </Link>
+            <Link to = "/create_account">
+                <button className="registerBtn">Register</button>
+            </Link>
         </div>
     </div>
     <div className="mainCenter">

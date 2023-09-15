@@ -7,6 +7,9 @@ import { PopularCourses } from './components/PopularCourses';
 import { RoadMaps } from './components/RoadMaps';
 import { AdminHome } from './Admin/admin_frontend/pages/admin_home'
 import { CoursesContextProvider } from './Admin/admin_frontend/context/CourseContext';
+// import { SigninPages } from './components/signin_pages';
+import { SignUpContainer } from './core/signin_pages';
+import { SigninPages } from './components/signin_pages';
 
 function App() {
   return (
@@ -27,6 +30,8 @@ function App() {
             </CoursesContextProvider>
           }
         />
+        <Route path = "/sign_in" element = {<SigninPages/>}/>
+        <Route path="/create_account" element={<SignUpContainer />} />
         </Routes>
     </div>
   );

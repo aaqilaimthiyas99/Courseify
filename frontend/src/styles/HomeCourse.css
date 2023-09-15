@@ -82,6 +82,7 @@ BODY{
     padding-left: 15px;
     height: 100%;
     width: 100%;
+    padding-top: 20px;
 }
 
 .SearchBox2-main:focus{
