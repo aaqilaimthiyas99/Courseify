@@ -3,10 +3,10 @@ import * as Components from '../core/signin_pages'
 import { Link } from 'react-router-dom'
 
 export const SignUp = () => {
-    const [signIn, toggle] = React.useState(true);
+    const [signUp] = React.useState(false);
   return (
          <Components.Container>
-             <Components.SignUpContainer href = "create_account" signinIn={signIn} id="signup-container">
+             <Components.SignUpContainer href = "create_account" signUp={signUp} id="signup-container">
                  <Components.Form>
                      <Components.Title>Create Your Account</Components.Title>
                      <Components.Input type='text' placeholder='Full Name' />
@@ -22,17 +22,19 @@ export const SignUp = () => {
                  </Components.Form>
              </Components.SignUpContainer>  
             
-             <Components.OverlayContainer signinIn={signIn}>
-                 <Components.Overlay signinIn={signIn}>
+             <Components.OverlayContainer signUp={signUp}>
+                 <Components.Overlay signUp={signUp}>
 
-                 <Components.LeftOverlayPanel signinIn={signIn}>
+                 <Components.LeftOverlayPanel signUp={signUp}>
                      <Components.Title>Welcome Back!</Components.Title>
                      <Components.Paragraph>
                          Stay connected with us for daily updates on free, time-limited courses offered by various websites. Unlock a world of learning opportunities!
                      </Components.Paragraph>
-                     <Components.GhostButton onClick={() => toggle(true)}>
-                         Sign In
-                     </Components.GhostButton>
+                     <Link to = "/sign_in">
+                        <Components.GhostButton>
+                            Sign In
+                        </Components.GhostButton>
+                     </Link>
                      </Components.LeftOverlayPanel> 
  
                  </Components.Overlay>

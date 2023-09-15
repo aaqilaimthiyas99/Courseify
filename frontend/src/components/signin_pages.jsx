@@ -1,10 +1,10 @@
 import React from 'react'
 import * as Components from '../core/signin_pages'
 import { Link } from 'react-router-dom'
-// import { SignUp } from './singn_up'
+  
 
 export const SigninPages = () => {
-    const [signIn, toggle] = React.useState(true);
+    const [signIn] = React.useState(true);
   return (
          <Components.Container>
              <Components.SignUpContainer signinIn={signIn} id="signup-container">
@@ -42,7 +42,9 @@ export const SigninPages = () => {
                       <Components.Button>Sign In with Google</Components.Button>
                       <Components.Paragraph>
                            Don’t have an account? 
-                            <b className="create-link" onClick={() => toggle(false)}> create </b>
+                        <Link to = "/create_account">
+                            <b className="create-button" > create</b>
+                         </Link>
                      </Components.Paragraph>
                   </Components.Form>
              </Components.SignInContainer>
@@ -55,9 +57,11 @@ export const SigninPages = () => {
                      <Components.Paragraph>
                          Stay connected with us for daily updates on free, time-limited courses offered by various websites. Unlock a world of learning opportunities!
                      </Components.Paragraph>
-                     <Components.GhostButton onClick={() => toggle(true)}>
+                     <Link to = "create_account">
+                     <Components.GhostButton>
                          Sign In
                      </Components.GhostButton>
+                     </Link>
                      </Components.LeftOverlayPanel> 
 
                      <Components.RightOverlayPanel signinIn={signIn}>
@@ -65,9 +69,11 @@ export const SigninPages = () => {
                        <Components.Paragraph>
                            Enter your personal details and start journey with us.
                        </Components.Paragraph>
-                           <Components.GhostButton onClick={() => toggle(false)}>
+                       <Link to = "/create_account">
+                           <Components.GhostButton>
                                Sign Up
                            </Components.GhostButton> 
+                        </Link>
                      </Components.RightOverlayPanel>
  
                  </Components.Overlay>

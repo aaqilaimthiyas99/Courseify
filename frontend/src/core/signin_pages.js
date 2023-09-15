@@ -176,11 +176,20 @@ export const Paragraph = styled.p`
     letter-spacing: 0.5px;
     margin: 3px 150px 3px;
 
-    .create-link{
+    .create-button{
+        color: #0E0828;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
         cursor: pointer;
+        text-decoration: none;
+        
+
         &:hover {
+            font-size: 21px;
             text-decoration: underline;
-            font-size: 22px;
         }
     }
 `;
