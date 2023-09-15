@@ -1,0 +1,242 @@
+body {
+  /* background: linear-gradient(180deg, hsla(90, 9%, 96%, 0) 0%, hsla(36, 29%, 71%, 1) 100%); */
+  background: linear-gradient(180deg, rgba(219, 167, 90, 0) 0%, #cab89e 100%);
+}
+
+.jtpage {
+  /* width: 1512px;
+height: 491px; */
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+}
+.formarea {
+  display: flex;
+  justify-content: center;
+  /* background: linear-gradient(180deg, rgba(219, 167, 90, 0.00) 0%, #CAB89E 100%); */
+  /* background: linear-gradient(180deg, rgba(219, 167, 90, 0.00) 0%, #CAB89E 100%); */
+}
+.jtrectangle1 {
+  width: 100%;
+  height: 491px;
+  flex-shrink: 0;
+  /* background: linear-gradient(180deg, rgba(219, 167, 90, 0.00) 0%, #CAB89E 100%); */
+}
+
+.jtheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 100px;
+}
+.jtlogo {
+  padding-left: 80px;
+  padding-top: 14px;
+}
+.jtheadercenter {
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+.jtheading {
+  padding-left: 234px;
+  padding-top: 0;
+}
+.jtheadingtext {
+  color: #0e0828;
+  font-family: Amaranth;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 21px;
+  padding-top: 2px;
+  padding-right: 512px;
+
+  width: 489px;
+  height: 58px;
+  flex-shrink: 0;
+}
+.jttxt1 {
+  color: rgba(0, 0, 0, 0.53);
+  font-family: Amaranth;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 0;
+  padding-left: 196px;
+  padding-right: 1247px;
+  padding-bottom: 308px;
+}
+.set {
+  padding-top: 0;
+  padding-left: 437.55px;
+  padding-right: 857.06px;
+  border-bottom: 601.11px;
+}
+
+.jtimg {
+  width: 268px;
+  height: 268px;
+  margin-top: -490px;
+  margin-bottom: 100px;
+  flex-shrink: 0;
+  padding-left: 0;
+  padding-top: -50px;
+  /* background:  lightgray 50% / cover no-repeat; */
+  border-radius: 100%;
+  box-shadow: 5px 5px 13px -10px rgba(0, 0, 0, 0.48);
+  -webkit-box-shadow: 5px 5px 13px -10px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: 5px 5px 13px -10px rgba(0, 0, 0, 0.48);
+}
+.jtvectorcontainer {
+  width: 46px;
+  height: 46px;
+  background: lightgray 50% / cover no-repeat;
+  margin-top: -158px;
+  margin-left: 629.55px;
+  border-radius: 100%;
+  box-shadow: 5px 5px 13px -10px rgba(0, 0, 0, 0.48);
+  -webkit-box-shadow: 5px 5px 13px -10px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: 5px 5px 13px -10px rgba(0, 0, 0, 0.48);
+  position: relative;
+  /* position: relative; */
+  display: inline-block;
+}
+
+.imageCamera {
+  position: absolute;
+  top: 14px;
+  left: 11px;
+}
+
+.jtvector {
+  width: 29px;
+  height: 25px;
+  flex-shrink: 0;
+  margin-top: 0;
+  margin-bottom: 150px;
+  margin-left: 0px;
+  padding-left: 9px;
+  padding-top: 12px;
+  fill: #000;
+}
+
+.button {
+  display: flex;
+  width: 218px;
+  height: 53px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background-color: #ac7118;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+   margin-left:1335px;
+   margin-bottom:40px;
+   margin-top:  -26px;
+   font-size: 17px;
+   font-weight: bold;
+ 
+}
+
+.button:hover {
+  background-color: #755524;
+}
+
+.button:active {
+  background-color: rgba(172, 113, 24, 1);
+  box-shadow: 0 5px rgba(117, 85, 36, 1);
+  transform: translateY(4px);
+}
+
+.formInput {
+  width: 381px;
+  height: 70px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  border: 2px solid #000;
+  background: #fff;
+  mix-blend-mode: darken;
+  margin-left: 81px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  
+
+  
+}
+
+.formLabel {  
+  
+}
+
+.inputContents {
+  margin: 40px 30px;
+  margin-left: 150px;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ 
+  
+}
+
+.imageProfile {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.imagePic {
+  border-radius: 50%;
+  object-fit: contain;
+  width: 268px;
+  height: 268px;
+}
+
+.center {
+  display: flex;
+  /* border: 1px solid black; */
+  margin-top:-350px;
+}
+
+.imageProfile{
+   
+    padding-right: 90px; 
+}
+
+.imagePic{
+    margin-left: 100px;
+    
+}
+
+.profileText{
+    margin-left: 130px;
+    
+}
+
+.leftSide {
+  flex: 1;
+}
+.rightSide {
+  flex: 1;
+  flex-direction: row;
+ margin-right: 100px;
+}
+.cameraLogo{
+    position: relative;
+    top:119px;
+    left: -45px;
+}
+
+.imageCamera{
+    position: absolute;
+    top:401px;
+    left: 595px;
+}
+
+.jtvectorcontainer{
+    position: absolute;
+}
