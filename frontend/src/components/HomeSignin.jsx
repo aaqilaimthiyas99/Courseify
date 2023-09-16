@@ -30,7 +30,6 @@ export const HomeSignin = () => {
         <div className="signincenterleft">
             <h1 className="signintitle"> Unlocking <span className='title-change-color'>exceptional education is now a</span> breeze!</h1>
             <p className="signinmainText">Stay connected with a single platform for daily updates on free, time-limited courses offered by various websites. Unlock a world of learning opportunities!</p>
-            <button className="signingetStratedBtn">Get Started</button>
             <button className="signingetFreeTrialBtn">Get Free Trial</button>
         </div>
         <div className="signincenterright">

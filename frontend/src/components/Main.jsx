@@ -25,6 +25,9 @@ export const Main = () => {
         <div className="mainCenterLeft">
             <h1 className="title"> Unlocking <span className='title-color-change'>exceptional education is now a</span> breeze!</h1>
             <p className="mainText">Stay connected with a single platform for daily updates on free, time-limited courses offered by various websites. Unlock a world of learning opportunities!</p>
+            <Link to = "/create_account">
+                <button className="signingetStratedBtn">Get Started</button>
+            </Link>
             <button className="getFreeTrialBtn">Get Free Trial</button>
         </div>
         <div className="mainCenterRight">

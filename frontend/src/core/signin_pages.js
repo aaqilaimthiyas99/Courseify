@@ -79,11 +79,12 @@ export const Button = styled.button`
    color: #FFF;
     text-align: center;
     font-family: Poppins;
-    font-size: 15px;
+    font-size: 17px;
     font-style: normal;
     font-weight: bold;
     line-height: normal;
     padding: 12px 45px;
+    white-space: nowrap;
     transition: transform 80ms ease-in;
    &:active{
        transform: scale(0.95);

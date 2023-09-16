@@ -125,6 +125,29 @@ body{
     background-color:#E4D1B6;
 }
 
+.signingetStratedBtn{
+    margin-right: 30px;
+    background-color:#AC7118;
+    width: 163px;
+    height: 53px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 13px -10px rgba(0,0,0,0.48);
+    -webkit-box-shadow: 5px 5px 13px -10px rgba(0,0,0,0.48);
+    -moz-box-shadow: 5px 5px 13px -10px rgba(0,0,0,0.48);
+    border: none;
+    color: white;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.signingetStratedBtn:hover{
+    background-color:#856029;
+}
+
 .mainCenterRight{
     margin-right: 100px;
 }

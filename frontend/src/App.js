@@ -10,6 +10,8 @@ import { CoursesContextProvider } from './Admin/admin_frontend/context/CourseCon
 // import { SigninPages } from './components/signin_pages';
 import { SigninPages } from './components/signin_pages';
 import { SignUp } from './components/singn_up';
+import { FindTutors } from './components/FindTutors';
+import { JoinAsTutor } from './components/JoinAsTutor';
 
 function App() {
   return (
@@ -18,10 +20,11 @@ function App() {
         <Route path="/" element = {<Main/>}/>
         <Route path = "/home" element = {<HomeSignin/>}/>
         <Route path = "/courses" element = {<PopularCourses/>}/>
-        {/* <Route path = "/tutors" element = {<HomeSignin/>}/> */}
+        <Route path = "/tutors" element = {<FindTutors/>}/>  
         <Route path = "/roadmaps" element = {<RoadMaps/>}/>
         {/* <Route path = "/contact" element = {<Contact/>}/> */}
-        <Route path = "/courses_by_category" element = {<HomeCourse/>}/>
+        <Route path = "/courses_by_category" element = {<HomeCourse/>}/> 
+        <Route path = "/join_as_tutor" element = {<JoinAsTutor/>}/>
         <Route
           path="/admin"
           element={
