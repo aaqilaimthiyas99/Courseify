@@ -1,0 +1,75 @@
+.aboutus{
+    /* margin: 4px 4px; */
+    /* justify-content: center; */
+    margin-top: 22px;
+    display: flex;
+}
+
+#header_logo{
+    text-align: right;
+}
+#image{
+    height: 138px;
+    width: 176px;
+}
+
+#image_1{
+    margin-top: 30px;
+    height: 28px;
+    width: 28px;
+}
+
+#bell{
+    margin-top: 28px;
+    color: #ac7118;
+    font-size: 25px;
+    
+}
+
+#header h5{
+    color: 0E0828;
+    font-size: 48px;
+}
+
+#hader_profile{
+    justify-content: left;
+}
+
+/* card */
+.a-card{
+    width: 75%;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 0);
+    border-radius: 20px;
+    /* border: 1px solid; */
+    margin: 40px;
+    background-color: rgb(238, 229, 206);
+    cursor: pointer;
+    padding: 10px;
+
+}
+
+.a-card h2{
+    color:#ac7118;
+}
+
+
+
+.social_media{
+    padding-top: 40px;
+    color: #ac7118;
+}
+
+.social_media h2{
+    font-size: 35px;
+}
+.emai{
+    text-align: right;
+}
+.phone{
+    text-align: center;
+}
+.linkedin{
+    text-align: left;
+}
