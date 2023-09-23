@@ -32,7 +32,7 @@ export const SigninPages = () => {
                      </Components.Paragraph>
                       <Components.Input type='email' placeholder='Email' />
                       <Components.Input type='password' placeholder='Password' />
-                      <Components.Anchor href = "#"><b>Forgot password?</b></Components.Anchor>
+                      <Components.Anchor href = "forgot_password"><b>Forgot password?</b></Components.Anchor>
                       <Link to = "/home">
                         <Components.Button>Sign In</Components.Button>
                     </Link>

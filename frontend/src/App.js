@@ -12,6 +12,8 @@ import { SigninPages } from './components/signin_pages';
 import { SignUp } from './components/singn_up';
 import { FindTutors } from './components/FindTutors';
 import { JoinAsTutor } from './components/JoinAsTutor';
+import About from './components/AboutUs';
+import { ForgotPassword } from './components/ForgotPassword';
 
 function App() {
   return (
@@ -22,9 +24,10 @@ function App() {
         <Route path = "/courses" element = {<PopularCourses/>}/>
         <Route path = "/tutors" element = {<FindTutors/>}/>  
         <Route path = "/roadmaps" element = {<RoadMaps/>}/>
-        {/* <Route path = "/contact" element = {<Contact/>}/> */}
+        <Route path = "/contact" element = {<About/>}/> 
         <Route path = "/courses_by_category" element = {<HomeCourse/>}/> 
         <Route path = "/join_as_tutor" element = {<JoinAsTutor/>}/>
+        <Route path = "/forgot_password" element = {<ForgotPassword/>}/>
         <Route
           path="/admin"
           element={

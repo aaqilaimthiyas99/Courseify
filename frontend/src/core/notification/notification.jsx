@@ -4,6 +4,6 @@ import notificationicon from './notificationicon.png'
 
 export default function Notification() {
   return (
-        <img src= { notificationicon } alt = "" className='notificationIcon'/>
+        <img src= { notificationicon } alt = "" className='notificationIcon' title = "Notification"/>
   )
 }

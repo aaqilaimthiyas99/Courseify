@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom'
 export const Main = () => {
   return (
     <>
-    
     <div className="mainHeader">
         <div className="mainHeaderLeft">
             <Logo/>
@@ -35,7 +34,7 @@ export const Main = () => {
         </div>
     </div>
     <div className="mainFooter">
-        <div className='container'>
+        <div className='mfbox1'>
             <div className="group1">
                 <div className='box1'>
                     <img src = "assets/Group1.jpg" alt='' className='group1img'/>
