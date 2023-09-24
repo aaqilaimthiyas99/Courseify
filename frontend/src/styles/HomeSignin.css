@@ -277,3 +277,37 @@ body{
     display: inline-block;
     white-space: nowrap;
 }
+
+.mainrec2box{
+    height: 200px;
+}
+
+.mainmininav2{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 256px;
+    margin-right: 256px;
+    margin-bottom: 40px;
+}
+
+.mainmininav2 h{
+    color: #000;
+    text-align: center;
+    font-family: Amaranth;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 157px;
+}
+
+.mainmininav2 h1{
+    color: #000;
+    text-align: center;
+    font-family: Amaranth;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 152px;
+}
