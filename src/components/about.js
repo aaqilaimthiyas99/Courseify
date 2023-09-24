@@ -2,7 +2,6 @@ import "./about.css";
 import 'bootstrap/dist/css/bootstrap.min.css';  
 import { Container,Row,Col } from 'react-bootstrap'; 
 import Logo from "../assets/Logo.png"
-import Bell from "../assets/Vector.png"
 import profile from "../assets/Mask group.png"
 // import ReactDOM from 'react-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -34,7 +33,7 @@ function about() {
                             <FontAwesomeIcon icon={faBell}/>  
                         </Col>
                         <Col lg="6">
-                            <img id="image_1" alt="img" src={profile}></img>
+                            <img id="image_prof" alt="img" src={profile}></img>
                         </Col>
                     </Row>
                 </Col>
