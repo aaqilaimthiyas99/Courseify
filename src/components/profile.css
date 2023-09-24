@@ -1,0 +1,45 @@
+.profile{
+      /* margin: 4px 4px; */
+    /* justify-content: center; */
+    margin-top: 22px;
+    display: flex;
+}
+
+#form-lable{
+    margin: 20px;
+}
+
+#image_1{
+    height: 220px;
+    width: 220px;
+}
+#profile_detail{
+    justify-content: center;
+}
+
+#courses{
+    padding-left: 70px;
+    justify-content: center;
+    /* display:flex; */
+}
+
+#image-course{
+    height: 150px;
+    width: 270px;
+    
+}
+#cource-img{
+    padding: 20px;
+}
+#row-btn{
+    justify-content: right;
+}
+#btn{
+    background-color: #AC7118;
+    border-color: #AC7118;
+    width: 130px;
+    height: 45px;
+
+}
+
+
