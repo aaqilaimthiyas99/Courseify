@@ -14,6 +14,7 @@ import { FindTutors } from './components/FindTutors';
 import { JoinAsTutor } from './components/JoinAsTutor';
 import About from './components/AboutUs';
 import { ForgotPassword } from './components/ForgotPassword';
+import Userprofile from './components/Userprofile';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path = "/courses_by_category" element = {<HomeCourse/>}/> 
         <Route path = "/join_as_tutor" element = {<JoinAsTutor/>}/>
         <Route path = "/forgot_password" element = {<ForgotPassword/>}/>
+        <Route path = "/my_profile" element = {<Userprofile/>}/>
         <Route
           path="/admin"
           element={
