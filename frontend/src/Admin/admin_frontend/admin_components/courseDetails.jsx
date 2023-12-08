@@ -1,6 +1,7 @@
 import React from 'react'
 import './courseDetails.css'
 import { useCoursesContext } from '../hooks/useCoursesContext'
+import { useAuthContext } from '../hooks/useAuthContext'
 
 //date fns
 import formatDistanceToNow from 'date-fns/formatDistanceToNow'
@@ -8,10 +9,17 @@ import formatDistanceToNow from 'date-fns/formatDistanceToNow'
 export const CourseDetails = ({ course }) => {
 
   const { dispatch } = useCoursesContext()
+  const { admin } = useAuthContext()
 
   const handleClick = async () => {
+    if (!admin) {
+      return
+    }
     const response = await fetch('/api/courses/' + course._id, {
-      method: 'DELETE'
+      method: 'DELETE',
+      headers: {
+        'Authorization': `Bearer ${admin.token}`
+      }
     })
     const json = await response.json()
 

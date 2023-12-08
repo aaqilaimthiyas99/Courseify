@@ -254,3 +254,32 @@
 .coursecontainer2{
   margin-top: 75px;
 }
+
+.btnsaveChanges{
+  color: white;
+  background-color:#AC7118;
+  display: flex;
+  width: 218px;
+  height: 53px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0; 
+  border-radius: 10px;
+  box-shadow: 5px 5px 13px -10px rgba(0,0,0,0.48);
+  -webkit-box-shadow: 5px 5px 13px -10px rgba(0,0,0,0.48);
+  -moz-box-shadow: 5px 5px 13px -10px rgba(0,0,0,0.48);
+  border: none;
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+  margin-top: 90px;
+  margin-left: 90px;
+}
+
+.btnsaveChanges:hover{
+  background-color: #856029;
+}

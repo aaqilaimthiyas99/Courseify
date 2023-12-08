@@ -1,9 +1,12 @@
 import React, { useState } from 'react'
 import { useCoursesContext } from '../hooks/useCoursesContext'
 import './CourseForm.css'
+import { useAuthContext } from '../hooks/useAuthContext'
 
 export const CourseForm = () => {
     const { dispatch } = useCoursesContext()
+    const { admin } = useAuthContext()
+
     const [name, setName] = useState('')
     const [category, setCategory] = useState('')
     const [enrollees, setEnrollees] = useState('')
@@ -15,13 +18,19 @@ export const CourseForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
 
+        if(!admin) {
+            setError('You must be looged in')
+            return
+        }
+
         const course =  {name, category, enrollees, rating, link}
 
         const response = await fetch('/api/courses', {
             method: 'POST',
             body: JSON.stringify(course),
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${admin.token}`
             }
         })
         const json = await response.json()
@@ -56,22 +65,11 @@ export const CourseForm = () => {
                 />
 
                 <label> Category to which the course belongs to: </label>
-                <select
+                <input
                     onChange={(e) => setCategory(e.target.value)}
                     value={category}
                     className={emptyFields.includes('category') ? 'error' : ''}
-                >
-                    <option value="">Select a Category</option>
-                    <option value="dweb_design">Web Design</option>
-                    <option value="programming">Programming</option>
-                    <option value="media">Media</option>
-                    <option value="business_and_consulting">Business & Consulting</option>
-                    <option value="finance_management">Finance Management</option>
-                    <option value="science_and_engineering">Science & Engineering</option>
-                    <option value="marketing_and_communication">Marketing & Communication</option>
-                    <option value="health_and_wellness">Health & Wellness</option>
-                    <option value="self_development">Self-Development</option>
-                </select>
+                />
 
                 <label> Number of students enrolled: </label>
                 <input

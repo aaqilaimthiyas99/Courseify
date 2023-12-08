@@ -1,5 +1,5 @@
 import { HomeSignin } from './components/HomeSignin';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes_authenticatio  } from 'react-router-dom';
 import { Main } from './components/Main';
 import { HomeCourse } from './components/HomeCourse';
 import './App.css';
@@ -7,6 +7,7 @@ import { PopularCourses } from './components/PopularCourses';
 import { RoadMaps } from './components/RoadMaps';
 import { AdminHome } from './Admin/admin_frontend/pages/admin_home'
 import { CoursesContextProvider } from './Admin/admin_frontend/context/CourseContext';
+import { AuthContextProvider } from './Admin/admin_frontend/context/AuthContext';
 // import { SigninPages } from './components/signin_pages';
 import { SigninPages } from './components/signin_pages';
 import { SignUp } from './components/singn_up';
@@ -15,6 +16,8 @@ import { JoinAsTutor } from './components/JoinAsTutor';
 import About from './components/AboutUs';
 import { ForgotPassword } from './components/ForgotPassword';
 import Userprofile from './components/Userprofile';
+import Login from './Admin/admin_frontend/pages/login';
+import Signup from './Admin/admin_frontend/pages/signup';
 
 function App() {
   return (
@@ -33,9 +36,31 @@ function App() {
         <Route
           path="/admin"
           element={
-            <CoursesContextProvider>
-              <AdminHome />
-            </CoursesContextProvider>
+            <AuthContextProvider>
+              <CoursesContextProvider>
+                <AdminHome />
+              </CoursesContextProvider>
+            </AuthContextProvider>
+          }
+        />
+        <Route
+          path="/admin/signup"
+          element={
+            <AuthContextProvider>
+              <AuthContextProvider>
+                <Signup/>
+              </AuthContextProvider>
+            </AuthContextProvider>
+          }
+        />
+        <Route
+          path="/admin/login"
+          element={
+            <AuthContextProvider>
+              <AuthContextProvider>
+                <Login/>
+              </AuthContextProvider>
+            </AuthContextProvider>
           }
         />
         <Route path = "/sign_in" element = {<SigninPages/>}/>

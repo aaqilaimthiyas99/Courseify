@@ -70,6 +70,9 @@ export default function Userprofile() {
               <h> Learn CMS Development </h>
             </div>
           </div>
+          <div className="savechangesbtn">
+            <button className='btnsaveChanges'>Save Changes </button>
+          </div>
         </div>
       </div>
       </div>
