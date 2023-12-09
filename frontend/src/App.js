@@ -47,9 +47,7 @@ function App() {
           path="/admin/signup"
           element={
             <AuthContextProvider>
-              <AuthContextProvider>
                 <Signup/>
-              </AuthContextProvider>
             </AuthContextProvider>
           }
         />
@@ -57,9 +55,7 @@ function App() {
           path="/admin/login"
           element={
             <AuthContextProvider>
-              <AuthContextProvider>
                 <Login/>
-              </AuthContextProvider>
             </AuthContextProvider>
           }
         />
