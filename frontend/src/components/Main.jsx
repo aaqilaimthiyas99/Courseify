@@ -1,11 +1,27 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import "../styles/Main.css"
 import Logo from '../core/logo/logo'
 import { Link } from 'react-router-dom'
 import { FeaturesBox } from '../core/featuresBox/featuresBox'
+import emailjs from '@emailjs/browser';
 
 
 export const Main = () => {
+    const form = useRef()
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_r1ukq1o', 'template_ym1zny9', form.current, 'QtYld-QyxvRMWUmtb')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          }
+          );
+          e.target.reset()
+      };
+
   return (
     <>
     <div className="mainHeader">
@@ -158,6 +174,7 @@ export const Main = () => {
             <img src='assets/mainabout.png' alt="" className='mainaboutpic'/>
         </div>
     </div>
+    <form ref = {form} onSubmit = {sendEmail} className='form--control'>
     <div className="getintouchrec1">
         <div className="getintouchtopic">
             <h> Get in Touch </h>
@@ -166,17 +183,19 @@ export const Main = () => {
             <p> Got questions or suggestions? <br/> We're just a message away.</p>
         </div>
         <div className="getintouchform1">
-            <input type='text' placeholder='Name' className='Name-main'/>
-            <input type='email' placeholder='E-mail' className='Email-main'/>
+            <input type='text' placeholder='Name' name = 'user_name' className='Name-main'/>
+            <input type='email' placeholder='E-mail' name = 'user_email' className='Email-main'/>
         </div>
     </div>
     <div className="getintouchrec2">
         <div className="getintouchform2">
-            <input type='text' placeholder='Message' className='Message-main'/>
+            <input type='text' placeholder='Message' name = 'message' className='Message-main'/>
         </div>
         <div className="formsubmitbutton">
             <button className='submitbtn'> Submit </button>
         </div>
+        </div>
+    </form>
         <div className="mainmininav">
             <h> Home </h>
             <h> Courses </h>
@@ -190,7 +209,6 @@ export const Main = () => {
         <div className="maincopyright">
             <p>© 2023 Courseify | All Rights Reserved</p>
         </div>
-    </div>
     </>
   )
 }

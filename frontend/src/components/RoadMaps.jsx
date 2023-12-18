@@ -7,6 +7,7 @@ import Profile from '../core/profile/profile'
 import RoadMapCard from '../core/roadmapBox//roadMapBox'
 
 export const RoadMaps = () => {
+    
   return (
     <>
     <div className="header">
@@ -34,39 +35,48 @@ export const RoadMaps = () => {
         <div className="line1">
             <RoadMapCard
                 title = "Frontend"
+                link = "https://roadmap.sh/frontend"
             />
             <RoadMapCard
                 title = "Full Stack"
+                link = "https://roadmap.sh/full-stack"
                 isFirstRoadMap
             />
             <RoadMapCard
                 title = "Cyber Security"
+                link = "https://roadmap.sh/cyber-security"
                 isFirstRoadMap
             />
         </div>
         <div className="line2">
             <RoadMapCard
                 title = "Backend"
+                link = "https://roadmap.sh/backend"
             />
             <RoadMapCard
                 title = "Android"
+                link = "https://roadmap.sh/android"
                 isFirstRoadMap
             />
             <RoadMapCard
                 title = "React Native"
+                link = "https://roadmap.sh/react-native"
                 isFirstRoadMap
             />
         </div>
         <div className="line3">
             <RoadMapCard
                 title = "DevOps"
+                link = "https://roadmap.sh/devops"
             />
             <RoadMapCard
                 title = "UX Design"
+                link = "https://roadmap.sh/ux-design"
                 isFirstRoadMap
             />
             <RoadMapCard
                 title = "Flutter"
+                link = "https://roadmap.sh/flutter"
                 isFirstRoadMap
             />
         </div>
@@ -80,27 +90,33 @@ export const RoadMaps = () => {
         <div className="sbline1">
             <RoadMapCard
                 title = "Computer Science"
+                link = "https://roadmap.sh/computer-science"
             />
             <RoadMapCard
                 title = "Vue"
+                link = "https://roadmap.sh/vue"
                 isFirstRoadMap
             />
         </div>
         <div className="sbline2">
             <RoadMapCard
                 title = "React"
+                link = "https://roadmap.sh/react"
             />
             <RoadMapCard
                 title = "JavaScript"
+                link = "https://roadmap.sh/javascript"
                 isFirstRoadMap
             />
         </div>
         <div className="sbline3">
             <RoadMapCard
                 title = "Angular"
+                link = "https://roadmap.sh/angular"
             />
             <RoadMapCard
                 title = "Node.js"
+                link = "https://roadmap.sh/nodejs"
                 isFirstRoadMap
             />
         </div>
