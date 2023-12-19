@@ -44,55 +44,64 @@ export const HomeCourse = ()=> {
         <div className="hcline1">
             <CourseComponent
                 imageSrc="/assets/Vector1.jpg"
-                courseTitle="Web Design"
+                courseTitle="Web Development"
                 courseCount={250}
                 isFirstCourse
+                link = "https://www.udemy.com/courses/development/web-development/?price=price-free&sort=popularity"
             />
             <CourseComponent
                 imageSrc="/assets/Vector2.jpg"
-                courseTitle="Business & Consulting"
+                courseTitle="Entrepreneurship"
                 courseCount={170}
+                link = "https://www.udemy.com/courses/business/entrepreneurship/"
             />
             <CourseComponent
                 imageSrc="/assets/Vector3.jpg"
-                courseTitle="Marketing & Communication"
+                courseTitle="Digital Marketing"
                 courseCount={300}
+                link = "https://www.udemy.com/courses/marketing/digital-marketing/"
             />
         </div>
         <div className="hcline2">
             <CourseComponent
                 imageSrc="/assets/Vector4.jpg"
-                courseTitle="Programming"
+                courseTitle="Web Design"
                 courseCount={400}
                 isFirstCourse
+                link = "https://www.udemy.com/courses/design/web-design/"
             />
             <CourseComponent
                 imageSrc="/assets/Vector5.jpg"
-                courseTitle="Finance Management"
+                courseTitle="Digital Photography"
                 courseCount={300}
+                link = "https://www.udemy.com/courses/photography-and-video/digital-photography/"
             />
             <CourseComponent
                 imageSrc="/assets/Vector6.jpg"
-                courseTitle="Health & Wellness"
+                courseTitle="Fitness"
                 courseCount={300}
+                link = "https://www.udemy.com/courses/health-and-fitness/fitness/"
             />
         </div>
         <div className="hcline3">
             <CourseComponent
                 imageSrc="/assets/Vector7.jpg"
-                courseTitle="Media"
+                courseTitle="Language Learning"
                 courseCount={150}
                 isFirstCourse
+                link = "https://www.udemy.com/courses/teaching-and-academics/language/"
             />
             <CourseComponent
                 imageSrc="/assets/Vector8.jpg"
-                courseTitle="Science & Engineering"
+                courseTitle="Career Development"
                 courseCount={350}
+                link = "https://www.udemy.com/courses/personal-development/career-development/" 
             />
             <CourseComponent
                 imageSrc="/assets/Vector9.jpg"
-                courseTitle="Self Development"
+                courseTitle="Personal Transformation"
                 courseCount={50}
+                link = "https://www.udemy.com/courses/personal-development/personal-transformation/"
             />
         </div>
     </div>

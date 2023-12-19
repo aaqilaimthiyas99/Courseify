@@ -1,15 +1,22 @@
 import React from 'react'
 import './pcCourseBox.css'
 
-export default function courseCard({ imageSrc, title, category, viewsCount, rating, isFirstCourse, highlightLength }) {
+export default function courseCard({ imageSrc, title, category, viewsCount, rating, isFirstCourse, highlightLength, link }) {
   const courseStyles = isFirstCourse ? {marginTop: '50px'} : { };
   const highlightStyle = {
     width: highlightLength ? `${highlightLength}px` : 'auto'
   };
 
+  const handleCardClick = () => {
+    if (link) {
+      // Redirect to the specified URL
+      window.location.href = link;
+    }
+  };
+
   return (
     <>
-      <div className="pccrse" style= {courseStyles}>
+      <div className="pccrse" style= {courseStyles} onClick={handleCardClick}>
         <div className="pcouterbox">
           <div className="pcimg">
             <img src={imageSrc} alt="" className="crseimg" />

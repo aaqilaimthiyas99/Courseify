@@ -16,7 +16,9 @@ export const Navbar = () => {
   return (
     <div className="admin_header">
         <div className="headerleft">
+          <Link to= "/admin">
                 <Logo/>
+          </Link>
         </div>
         <nav>
           {!admin && (

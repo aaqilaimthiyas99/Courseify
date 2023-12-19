@@ -1,5 +1,5 @@
 import { HomeSignin } from './components/HomeSignin';
-import { Route, Routes  } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { Main } from './components/Main';
 import { HomeCourse } from './components/HomeCourse';
 import './App.css';
